@@ -1,5 +1,5 @@
 .top_bar {
-    width: 1366px;
+    width: 100%;
     height: 48px;
     display: flex;
     margin: auto;
@@ -12,6 +12,7 @@
     margin-left: 15px;
     color: #1f1f1f;
     text-decoration-line: none;
+    white-space: nowrap;
 }
 .google_info:hover{
     text-decoration: underline;
@@ -24,12 +25,13 @@
     margin-left: 10px; 
     color: #1f1f1f;
     text-decoration-line: none;
+    white-space: nowrap;
 }
 .store:hover{
     text-decoration: underline;
 }
 .top_box{
-    width: 1199px;
+    width: 100%;
     height: 48px;
     margin-left: auto;
     display: flex;
@@ -64,7 +66,7 @@
     width: 40px;
     height: 40px;
     margin-left: 25px;
-    margin-top: 13px;
+    margin-top: 10px;
     margin-right: 10px;
     float: right;
 }
@@ -76,7 +78,7 @@
     color: white;
     letter-spacing: .25px;
     line-height: 16px;
-    margin-top: 9px;
+    margin-top: 5px;
     margin-right: 15px;
     min-width: 96px;
     padding: 9px 23px;
@@ -92,41 +94,45 @@
     box-shadow: 0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3);
 }
 .logo{
-    width: 1366px;
-    height: 92px;
+    width: 100%;
+    height: 18rem;
     display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
 }
 .logo_box {
     width: 272px;
     height: 92px;
     margin-top: 5px;
     position: absolute;
-    left: 40%;
     margin: auto;
+    display: flex;
+    bottom: 0;
 }
 .google_img {
     width: 272px;
     height: 92px;
-    object-fit: contain;
-    object-position: center bottom;
+    position: relative;
     width: auto;
 }
 
 .search_bg{
-    width: 1366px;
+    width: 100%;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .search_box{
-    width: 1326px;
+    width: 100%;
     height: 142px;
+    display: flex;
 }
 .search{
     margin-top: 10px;
-    width: 582px;
+    width: 40%;
+    min-width: 500px;
     height: 46px;
     display: flex;
     position: relative;
@@ -136,7 +142,37 @@
     border-radius: 24px;
     margin: 0 auto;
     display: flex;
+    justify-content: left;
+    align-items: center;
 }
 .search:hover{
     box-shadow: 0 1px 6px rgba(32,33,36,.28);
 }
+.search_btn{
+    width: 20px;
+    height: 27px;
+    margin-left: 15px;
+    margin-top: 7px;
+    float: left;
+    position: relative;
+    color: rgb(154, 160, 166);
+    fill: rgb(154, 160, 166);
+}
+#search_txt{
+    justify-content: left;
+    align-items: center;
+    float: left;
+    resize: none;
+    background-color: transparent;
+    margin-top: 9px;
+    margin-left: 5px;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    display: flex;
+    font-family: Apple SD Gothic Neo,arial,sans-serif;
+    line-height: 25px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    overflow-x: hidden;
+    border: none;
+    outline: none;
